@@ -272,7 +272,7 @@ if ( typeof Object.create !== 'function' ) {
             $carouselLi.addClass('active');
             self.$activeCarouselLi.removeClass('active');
 
-            $sliderLi.effect(self.options.slideEffect, self.options.slideProperties, self.options.slideSpeed, function() {
+            $sliderLi.effect(self.options.sliderEffect, self.options.sliderProperties, self.options.sliderSpeed, function() {
                 self.$activeSliderLi.hide();
                 self.$activeSliderLi.find('.overlay').hide();
 
@@ -315,13 +315,13 @@ if ( typeof Object.create !== 'function' ) {
         pauseTime: 3000,
         pauseOnHover: true,
         axis: 'x',
-        carouselSpeed: 400,
-        slideEffect: 'fade',
-        slideProperties: {mode: 'show', easing: 'swing'},
-        slideSpeed: 300,
+        carouselSpeed: 300,
+        sliderEffect: 'fade',
+        sliderProperties: {mode: 'show', easing: 'swing'},
+        sliderSpeed: 300,
         overlayEffect: 'slide',
         overlayProperties: {direction: 'left', mode: 'show', easing: 'swing'},
-        overlaySpeed: 800,
+        overlaySpeed: 900,
         afterNext: function() {},
         afterPrev: function() {}
     };
